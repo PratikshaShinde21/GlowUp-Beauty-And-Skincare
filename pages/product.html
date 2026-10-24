@@ -6,154 +6,252 @@
     <title>Product Page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-[#fff8f0]">
+  <div class="text-center mt-10 mb-8 px-4">
 
-    <div class="flex flex-wrap  gap-5 p-5 justify-between text-center bg-[#fff8f0]">
-    <h1 class="flex flex-wrap  gap-5 p-5 justify-between bg-[#fff8f0]
-    font-bold text-2xl text-gray-800">
-    PRODUCTS
-    </h1>
+    <h2 class="text-3xl md:text-4xl font-bold text-pink-700 mb-3">
+        Our Beauty Products
+    </h2>
 
-    <div class="flex flex-wrap  gap-5 p-5 justify-between">
-        <a href="./../index.html" class="hover:text-pink-500">Home</a>
-        <a href="./../about.html" class="hover:text-pink-500">About</a>
-        <a href="./../contact.html" class="hover:text-pink-500">Contact</a>
-        <a href="./../products.html" class="hover:text-pink-500">Products</a>
-        <a href="./../login.html" class="hover:text-pink-500">Login</a>
+    <p class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+        Discover our collection of beauty and skincare products.
+        Find your perfect products to keep your skin glowing,
+        healthy, and beautiful every day.
+    </p>
+
+</div>
+
+<!-- Category Filter Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-4 py-6">
+
+    <button class="bg-[#f5f5df] px-8 py-4 rounded-full shadow-md text-gray-800 font-medium text-lg hover:bg-pink-100 transition">
+        All
+    </button>
+
+    <button class="bg-[#f5f5df] px-8 py-4 rounded-full shadow-md text-gray-800 font-medium text-lg hover:bg-pink-100 transition">
+        Face Wash
+    </button>
+
+    <button class="bg-[#f5f5df] px-8 py-4 rounded-full shadow-md text-gray-800 font-medium text-lg hover:bg-pink-100 transition">
+        Serums
+    </button>
+
+    <button class="bg-[#f5f5df] px-8 py-4 rounded-full shadow-md text-gray-800 font-medium text-lg hover:bg-pink-100 transition">
+        Moisturizers
+    </button>
+
+    <button class="bg-[#f5f5df] px-8 py-4 rounded-full shadow-md text-gray-800 font-medium text-lg hover:bg-pink-100 transition">
+        Sunscreen
+    </button>
+
+</div>
+
+<!-- Product Cards -->
+<div id="products" class="flex-1 px-4 pb-8">
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <!-- Face Wash -->
+        <div id="facewash"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./Face-Wash.html">
+                <img src="./../images/products-img/facewash1.jpg"
+                     alt="Face Wash"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Face Wash
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+                Gently cleanses skin and removes dirt.
+            </p>
+
+            <a href="./Face-Wash.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
+
+        <!-- Face Serum -->
+        <div id="serum"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./Face-Serum.html">
+                <img src="./../images/products-img/serum.jpg"
+                     alt="Face Serum"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Face Serum
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+                Hydrates skin and enhances its natural glow.
+            </p>
+
+            <a href="./Face-Serum.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
+
+        <!-- Moisturizer -->
+        <div id="moisturizer"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./Moisturizer.html">
+                <img src="./../images/products-img/moisturieser1.jpg"
+                     alt="Moisturizer"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Moisturizer
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+                Keeps skin soft, smooth and moisturized.
+            </p>
+
+            <a href="./Moisturizer.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
+
+        <!-- Sunscreen -->
+        <div id="sunscreen"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./Sunscreen.html">
+                <img src="./../images/products-img/sunscreen1.jpg"
+                     alt="Sunscreen"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Sunscreen
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+                Helps protect skin from harmful UV rays.
+            </p>
+
+            <a href="./Sunscreen.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
+
+        <!-- Aloe Vera Gel -->
+        <div id="aloe-vera"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./AloeVera-Gel.html">
+                <img src="./../images/products-img/Aloe Vera Gel.jpg"
+                     alt="Aloe Vera Gel"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Aloe Vera Gel
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+                Helps moisturize and soothe your skin.
+            </p>
+
+            <a href="./AloeVera-Gel.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
+
+        <!-- Face Toner -->
+        <div id="toner"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./Face-Toner.html">
+                <img src="./../images/products-img/Face Toner.jpg"
+                     alt="Face Toner"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Face Toner
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+               Refreshes skin and keeps it fresh.
+            </p>
+
+            <a href="./Face-Toner.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
+
+        <!-- Night Cream -->
+        <div id="night-cream"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./Night-Cream.html">
+                <img src="./../images/products-img/Night Cream.jpg"
+                     alt="Night Cream"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Night Cream
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+                Provides overnight moisture to help keep skin soft.
+            </p>
+
+            <a href="./Night-Cream.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
+
+        <!-- Face Scrub -->
+        <div id="face-scrub"
+             class="bg-white rounded-lg shadow p-3 hover:shadow-lg">
+
+            <a href="./Face-Scrub.html">
+                <img src="./../images/products-img/Face Scrub.jpg"
+                     alt="Face Scrub"
+                     class="w-full h-42 object-cover rounded-lg">
+            </a>
+
+            <h3 class="font-bold text-gray-800 text-sm mt-3">
+                Face Scrub
+            </h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+                Gently exfoliates skin and removes dead skin cells.
+            </p>
+
+            <a href="./Face-Scrub.html"
+               class="block text-center text-sm bg-pink-600 text-white py-2 rounded-2xl mt-3 hover:bg-pink-700">
+                View Products
+            </a>
+        </div>
+
     </div>
-
-    </div>
-    
-    <div class="flex flex-wrap  gap-5 p-5 justify-between bg-[#fff8f0]">
-    <div class="bg-white w-72 rounded-xl shadow-lg p-4">
-    <img
-      src="./../images/products-img/facewash1.jpg"
-      alt="Face Wash"
-      class="w-full h-56 object-cover rounded-lg"
-    >
-    <h2 class="text-xl font-bold text-gray-800 mt-4">
-      Face Wash
-    </h2>
-
-    <p class="text-gray-500 text-sm mt-1">
-      Skincare
-    </p>
-
-    <p class="text-yellow-500 mt-2">
-      ★ <span class="text-gray-500">(4.5)</span>
-    </p>
-
-    <p class="text-pink-600 text-2xl font-bold mt-2">
-      ₹199
-    </p>
-
-    <a href="./product-detail.html">
-    <button
-      class="bg-pink-500 hover:bg-pink-600 text-white
-      w-full py-2 rounded-lg mt-4">
-      Know More
-    </button>
-    </a>
-  </div>
-
-  <div class="bg-white w-72 rounded-xl shadow-lg p-4">
-    <img
-      src="./../images/products-img/serum.jpg"
-      alt="Vitamin C Serum"
-      class="w-full h-56 object-cover rounded-lg"
-    >
-    <h2 class="text-xl font-bold text-gray-800 mt-4">
-      Vitamin C Serum
-    </h2>
-
-    <p class="text-gray-500 text-sm mt-1">
-      Skincare
-    </p>
-
-    <p class="text-yellow-500 mt-2">
-      ★ <span class="text-gray-500">(4.7)</span>
-    </p>
-
-    <p class="text-pink-600 text-2xl font-bold mt-2">
-      ₹349
-    </p>
-
-    <a href="./product-detail.html">
-    <button
-      class="bg-pink-500 hover:bg-pink-600 text-white
-      w-full py-2 rounded-lg mt-4">
-      Know More
-    </button>
-    </a>
-
-  </div>
-
-  <div class="bg-white w-72 rounded-xl shadow-lg p-4">
-    <img
-      src="./../images/products-img/moisturieser1.jpg"
-      alt="Moisturizer"
-      class="w-full h-56 object-cover rounded-lg"
-    >
-    <h2 class="text-xl font-bold text-gray-800 mt-4">
-        Moisturizer
-    </h2>
-
-    <p class="text-gray-500 text-sm mt-1">
-      Skincare
-    </p>
-
-    <p class="text-yellow-500 mt-2">
-      ★ <span class="text-gray-500">(4.6)</span>
-    </p>
-
-    <p class="text-pink-600 text-2xl font-bold mt-2">
-      ₹249
-    </p>
-
-    <a href="./product-detail.html">
-    <button
-      class="bg-pink-500 hover:bg-pink-600 text-white
-      w-full py-2 rounded-lg mt-4">
-      Know More
-    </button>
-    </a>
-
-  </div>
-
-  <div class="bg-white w-72 rounded-xl shadow-lg p-4">
-    <img
-      src="./../images/products-img/sunscreen1.jpg"
-      alt="Sunscreen"
-      class="w-full h-56 object-cover rounded-lg"
-    >
-    <h2 class="text-xl font-bold text-gray-800 mt-4">
-      Sunscreen
-    </h2>
-
-    <p class="text-gray-500 text-sm mt-1">
-      Skincare
-    </p>
-
-    <p class="text-yellow-500 mt-2">
-      ★<span class="text-gray-500">(4.5)</span>
-    </p>
-
-    <p class="text-pink-600 text-2xl font-bold mt-2">
-      ₹299
-    </p>
-
-    <a href="./product-detail.html">
-    <button
-      class="bg-pink-500 hover:bg-pink-600 text-white
-      w-full py-2 rounded-lg mt-4">
-      Know More
-    </button>
-    </a>
-
-  </div>
-
-  </div>
-
-
+</div>
 </body>
 </html>
