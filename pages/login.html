@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlowUp | Login</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="min-h-screen bg-[#FFF8F0] px-4 py-8 sm:px-6 lg:px-10">
+
+    <div class="mx-auto flex w-full max-w-5xl flex-col items-center">
+
+        <!-- TOP BRAND INTRODUCTION -->
+        <div class="mb-8 w-full text-center">
+
+            <div class="mb-3 flex items-center justify-center gap-3">
+                <span class="h-px w-10 bg-[#E8B6C6]"></span>
+                <i class="fa-solid fa-spa text-xl text-[#C75B7A]"></i>
+                <span class="h-px w-10 bg-[#E8B6C6]"></span>
+            </div>
+
+            <h2 class="text-2xl font-bold tracking-tight text-[#49343B] sm:text-3xl">
+                Your Beauty, Your
+                <span class="text-[#C75B7A]">Ritual.</span>
+            </h2>
+
+            <div class="mt-3 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-heart text-xs text-[#C75B7A]"></i>
+
+                <p class="text-xs font-medium tracking-[2px] text-[#49343B]/70">
+                    SELF-CARE STARTS HERE
+                </p>
+
+                <i class="fa-solid fa-heart text-xs text-[#C75B7A]"></i>
+            </div>
+
+        </div>
+
+
+        <!-- MAIN LOGIN CARD -->
+        <main class="grid w-full grid-cols-1 overflow-hidden rounded-3xl bg-white shadow-2xl md:grid-cols-2">
+
+
+            <!-- LEFT IMAGE SECTION -->
+            <section class="relative block min-h-[560px] overflow-hidden sm:min-h-[620px] md:min-h-[620px]">
+
+                <!-- BACKGROUND IMAGE -->
+                <img
+                    src="./../images/login-cream.png"
+                    alt="GlowUp luxury skincare collection"
+                    class="absolute inset-0 h-full w-full object-cover object-center">
+
+                <!-- IMAGE OVERLAY -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#49343B]/90 via-[#49343B]/10 to-transparent"></div>
+
+
+                <!-- BRAND CONTENT -->
+                <div class="absolute left-4 right-4 top-5 sm:left-7 sm:right-7 sm:top-7 md:left-8 md:right-8 md:top-9">
+
+                    <!-- LOGO -->
+                    <h1 class="text-3xl font-bold tracking-tight text-[#49343B] sm:text-4xl md:text-5xl">
+                        Glow<span class="text-[#C75B7A]">Up.</span>
+                    </h1>
+
+                    <!-- TAGLINE -->
+                    <p class="mt-2 text-[10px] font-semibold uppercase tracking-[2px] text-[#49343B] sm:text-xs sm:tracking-[3px] md:mt-3 md:tracking-[4px]">
+                        Your Beauty, Your Glow
+                    </p>
+
+                    <!-- DECORATIVE LINE -->
+                    <div class="mt-3 h-[2px] w-12 rounded-full bg-[#C75B7A] sm:mt-4 sm:w-14"></div>
+
+
+                    <!-- BEAUTY CATEGORIES -->
+                    <div class="mt-3 flex items-start gap-3 sm:mt-4 sm:gap-4 md:gap-5">
+
+                        <!-- BEAUTY -->
+                        <div class="flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-wand-magic-sparkles text-base text-[#C75B7A] sm:text-lg"></i>
+
+                            <span class="text-[10px] font-semibold tracking-wide text-[#49343B] sm:text-xs">
+                                Beauty
+                            </span>
+                        </div>
+
+                        <!-- SKINCARE -->
+                        <div class="flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-leaf text-base text-[#C75B7A] sm:text-lg"></i>
+
+                            <span class="text-[10px] font-semibold tracking-wide text-[#49343B] sm:text-xs">
+                                Skincare
+                            </span>
+                        </div>
+
+                        <!-- SELF-CARE -->
+                        <div class="flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-heart text-base text-[#C75B7A] sm:text-lg"></i>
+
+                            <span class="text-[10px] font-semibold tracking-wide text-[#49343B] sm:text-xs">
+                                Self-care
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IMAGE DESCRIPTION -->
+                <div class="absolute bottom-5 left-4 right-4 text-white sm:bottom-8 sm:left-7 sm:right-7 md:bottom-10 md:left-8 md:right-8">
+
+                    <!-- SMALL HEADING -->
+                    <span class="text-[10px] font-bold uppercase tracking-[2px] text-[#F8C8DC] sm:text-xs sm:tracking-[3px]">
+                        YOUR BEAUTY JOURNEY
+                    </span>
+
+                    <!-- MAIN HEADING -->
+                    <h2 class="mt-3 text-2xl font-bold leading-tight sm:mt-4 sm:text-3xl md:text-4xl">
+                        Feel Beautiful.<br>
+                        <span class="text-[#F8C8DC]">Glow Naturally.</span>
+                    </h2>
+
+                    <!-- DESCRIPTION -->
+                    <p class="mt-3 max-w-sm text-xs leading-5 text-white drop-shadow-[0_1px_3px_rgba(73,52,59,0.9)] sm:mt-4 sm:text-sm sm:leading-7">
+                        Discover skincare that celebrates your natural beauty.
+                        Make every day a moment of self-care and confidence.
+                    </p>
+
+                    <!-- BOTTOM MESSAGE -->
+                    <div class="mt-4 flex items-center gap-3 sm:mt-6 md:mt-7">
+
+                        <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/20 sm:h-10 sm:w-10">
+                            <i class="fa-solid fa-heart text-sm text-[#F8C8DC] sm:text-base"></i>
+                        </div>
+
+                        <p class="text-xs text-white sm:text-sm">
+                            Your skin. Your care. Your glow.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT LOGIN SECTION -->
+            <section class="flex items-center justify-center px-6 py-10 sm:px-10 sm:py-12 lg:px-12">
+
+                <div class="w-full max-w-md">
+
+                    <!-- MOBILE LOGO -->
+                    <h1 class="mb-8 text-center text-3xl font-bold text-[#49343B] md:hidden">
+                        Glow<span class="text-[#C75B7A]">Up.</span>
+                    </h1>
+
+
+                    <!-- FORM HEADING -->
+                    <div class="mb-8">
+
+                        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#F8C8DC]/50 text-2xl text-[#C75B7A]">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <p class="text-sm font-semibold uppercase tracking-[3px] text-[#C75B7A]">
+                            Welcome Back
+                        </p>
+
+                        <h2 class="mt-3 text-3xl font-bold text-[#49343B] sm:text-4xl">
+                            Sign In
+                        </h2>
+
+                        <p class="mt-3 text-sm leading-6 text-[#49343B]/65">
+                            Welcome to GlowUp! Sign in to explore your beauty
+                            favourites and enjoy a more personal skincare experience.
+                        </p>
+
+                    </div>
+
+
+                    <!-- LOGIN FORM -->
+                    <form action="#" method="post" class="space-y-6">
+
+                        <!-- EMAIL FIELD -->
+                        <div>
+
+                            <label for="email"
+                                   class="mb-2 block text-sm font-semibold text-[#49343B]">
+                                Email Address
+                            </label>
+
+                            <div class="relative">
+
+                                <i class="fa-regular fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-[#C75B7A]"></i>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required
+                                    class="w-full rounded-xl border border-[#E8DDE0] bg-white py-3.5 pl-11 pr-4 text-sm text-[#49343B] placeholder:text-gray-400 focus:border-[#C75B7A] focus:outline-none focus:ring-2 focus:ring-[#F8C8DC]">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD FIELD -->
+                        <div>
+
+                            <label for="password"
+                                   class="mb-2 block text-sm font-semibold text-[#49343B]">
+                                Password
+                            </label>
+
+                            <div class="relative">
+
+                                <i class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-[#C75B7A]"></i>
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    required
+                                    class="w-full rounded-xl border border-[#E8DDE0] bg-white py-3.5 pl-11 pr-4 text-sm text-[#49343B] placeholder:text-gray-400 focus:border-[#C75B7A] focus:outline-none focus:ring-2 focus:ring-[#F8C8DC]">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REMEMBER AND FORGOT PASSWORD -->
+                        <div class="flex items-center justify-between gap-3">
+
+                            <label class="flex cursor-pointer items-center gap-2 text-sm text-[#49343B]/75">
+
+                                <input
+                                    type="checkbox"
+                                    name="remember"
+                                    class="h-4 w-4 accent-[#C75B7A]">
+
+                                Remember me
+
+                            </label>
+
+                            <a href="#"
+                               class="text-sm font-semibold text-[#C75B7A] hover:underline">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <!-- SIGN IN BUTTON -->
+                        <button
+                            type="submit"
+                            class="flex w-full items-center justify-center gap-3 rounded-xl bg-[#C75B7A] py-4 font-semibold text-white shadow-lg shadow-[#C75B7A]/20 transition duration-300 hover:-translate-y-0.5 hover:bg-[#49343B]">
+
+                            Sign In
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- TRUST MESSAGE -->
+                    <div class="mt-8 rounded-xl border border-[#F8C8DC] bg-[#FFF8F0] p-4">
+
+                        <div class="flex items-start gap-3">
+
+                            <i class="fa-solid fa-shield-heart mt-1 text-xl text-[#C75B7A]"></i>
+
+                            <div>
+
+                                <h3 class="text-sm font-bold text-[#49343B]">
+                                    Your Beauty, Your Privacy
+                                </h3>
+
+                                <p class="mt-1 text-xs leading-5 text-[#49343B]/65">
+                                    Your personal experience matters to us.
+                                    Sign in to continue your GlowUp journey.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BRAND MESSAGE -->
+                    <div class="mt-7 text-center">
+
+                        <p class="text-sm italic text-[#49343B]/65">
+                            "Self-care is how you take your power back."
+                        </p>
+
+                        <div class="mt-4 flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[2px] text-[#C75B7A]">
+
+                            <span class="h-px w-8 bg-[#F8C8DC]"></span>
+
+                            Your Beauty, Your Glow
+
+                            <span class="h-px w-8 bg-[#F8C8DC]"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- BEAUTY BENEFITS OUTSIDE LOGIN CARD -->
+        <section class="mt-8 w-full">
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+
+
+                <!-- BENEFIT 1 -->
+                <div class="flex items-center gap-4 rounded-2xl border border-[#F8C8DC]/70 bg-white/70 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#F8C8DC]/40 text-xl text-[#C75B7A]">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-bold text-[#49343B]">
+                            Skin First
+                        </h3>
+
+                        <p class="mt-1 text-xs leading-5 text-[#49343B]/65">
+                            Make self-care part of your everyday routine.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BENEFIT 2 -->
+                <div class="flex items-center gap-4 rounded-2xl border border-[#F8C8DC]/70 bg-white/70 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#F8C8DC]/40 text-xl text-[#C75B7A]">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-bold text-[#49343B]">
+                            Feel Beautiful
+                        </h3>
+
+                        <p class="mt-1 text-xs leading-5 text-[#49343B]/65">
+                            Celebrate your beauty and natural confidence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BENEFIT 3 -->
+                <div class="flex items-center gap-4 rounded-2xl border border-[#F8C8DC]/70 bg-white/70 p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#F8C8DC]/40 text-xl text-[#C75B7A]">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-bold text-[#49343B]">
+                            Glow Every Day
+                        </h3>
+
+                        <p class="mt-1 text-xs leading-5 text-[#49343B]/65">
+                            Turn little moments into beautiful rituals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM BRAND MESSAGE -->
+            <div class="mt-8 pb-2 text-center">
+
+                <div class="flex items-center justify-center gap-3">
+
+                    <span class="h-px w-8 bg-[#F8C8DC] sm:w-14"></span>
+
+                    <i class="fa-solid fa-heart text-sm text-[#C75B7A]"></i>
+
+                    <span class="h-px w-8 bg-[#F8C8DC] sm:w-14"></span>
+
+                </div>
+
+                <p class="mt-3 text-sm italic text-[#49343B]/75">
+                    Because every day deserves a little glow.
+                </p>
+
+                <p class="mt-2 text-[10px] font-semibold uppercase tracking-[3px] text-[#C75B7A]">
+                    GlowUp Beauty & Self-Care
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
