@@ -1,11 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlowUp - Beauty and Skincare</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowUp | Beauty and Skincare</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Welcome to GlowUp</h1>
+<body class="bg-[#FFF8F0] text-[#49343B]">
+
+  <!-- Header -->
+  <header class="bg-white fixed top-0 z-50 w-full border-b border-[#F8C8DC] shadow-sm">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-4">
+      <a href="./index.html" class="flex items-center gap-2 text-2xl font-bold text-[#C75B7A]">
+        <img src="images/lotus.png" alt="GlowUp lotus logo" class="h-9 w-9">
+        GlowUp
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-5 text-sm font-medium">
+        <a href="./index.html" class="flex items-center gap-1.5 text-[#C75B7A]">
+          <img src="images/home.png" alt="" class="h-4 w-4 object-contain">
+          Home
+        </a>
+        <a href="./pages/product.html" class="flex items-center gap-1.5 hover:text-[#C75B7A]">
+          <img src="images/products.png" alt="" class="h-4 w-4 object-contain">
+          Products
+        </a>
+        <a href="./pages/about.html" class="flex items-center gap-1.5 hover:text-[#C75B7A]">
+          <img src="images/info.png" alt="" class="h-4 w-4 object-contain">
+          About
+        </a>
+        <a href="./pages/contact.html" class="flex items-center gap-1.5 hover:text-[#C75B7A]">
+          <img src="images/phone-call.png" alt="" class="h-4 w-4 object-contain">
+          Contact
+        </a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="./pages/cart.html" aria-label="Cart" class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90">
+          <img src="images/shopping-cart.png" alt="" class="h-5 w-5 object-contain">
+          Cart
+        </a>
+        <a href="./pages/login.html" class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white hover:opacity-90">
+          <img src="images/account.png" alt="" class="h-5 w-5 object-contain">
+          Login
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative min-h-[520px] overflow-hidden bg-[#F8C8DC] md:min-h-[620px]">
+      <img
+        src="./images/glowup-hero.jpeg"
+        alt="GlowUp serum, face wash, and moisturizer with cherry blossoms"
+        class="absolute inset-0 h-full w-full object-cover object-center"
+      >
+      <div class="absolute inset-0 bg-gradient-to-r from-[#FFF8F0]/95 via-[#FFF8F0]/75 to-transparent"></div>
+
+      <div class="relative mx-auto flex min-h-[520px] max-w-6xl items-center px-5 py-14 md:min-h-[620px]">
+        <div class="max-w-xl">
+          <p class="mb-4 inline-block rounded-full bg-[#F8C8DC] px-4 py-2 text-sm font-semibold text-[#49343B]">
+            Natural • Gentle • Effective
+          </p>
+          <h1 class="text-4xl font-bold leading-tight text-[#49343B] md:text-6xl">
+            Your daily glow<br>starts with <span class="text-[#C75B7A]">care.</span>
+          </h1>
+          <p class="mt-5 max-w-lg text-base leading-relaxed text-[#49343B] md:text-lg">
+            Meet your new skincare routine: gentle cleansing, Vitamin C serum, and everyday hydration, made for healthy-looking skin.
+          </p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="./pages/product.html" class="rounded-full bg-[#C75B7A] px-7 py-3 font-semibold text-white hover:opacity-90">
+              Shop skincare →
+            </a>
+            <a href="./pages/about.html" class="rounded-full border-2 border-[#49343B] bg-[#FFF8F0]/70 px-7 py-3 font-semibold text-[#49343B] hover:bg-white">
+              Our story
+            </a>
+          </div>
+          <div class="mt-9 flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-[#49343B]">
+            <span>Gentle daily care</span>
+            <span>•</span>
+            <span>Cleanse • Treat • Hydrate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Products -->
+    <section id="products" class="bg-[#F8C8DC]/40 px-5 py-10">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-6 text-center">
+          <h2 class="text-3xl font-bold text-[#49343B] md:text-4xl">Our Products</h2>
+          <p class="mt-2 text-sm text-[#49343B]/70">Simple everyday care for your natural glow.</p>
+        </div>
+        <div class="mb-8 flex flex-wrap justify-center gap-3">
+          <a href="./pages/product.html" class="rounded-full bg-white px-5 py-3 shadow-sm hover:bg-[#C75B7A] hover:text-white">All</a>
+          <a href="./pages/product.html" class="rounded-full bg-white px-5 py-3 shadow-sm hover:bg-[#C75B7A] hover:text-white">Face Wash</a>
+          <a href="./pages/product.html" class="rounded-full bg-white px-5 py-3 shadow-sm hover:bg-[#C75B7A] hover:text-white">Serums</a>
+          <a href="./pages/product.html" class="rounded-full bg-white px-5 py-3 shadow-sm hover:bg-[#C75B7A] hover:text-white">Moisturizers</a>
+          <a href="./pages/product.html" class="rounded-full bg-white px-5 py-3 shadow-sm hover:bg-[#C75B7A] hover:text-white">Sunscreen</a>
+        </div>
+
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#F8C8DC] bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+          <img src="images/products-img/serum.jpg" alt="Vitamin C face serum" class="h-56 w-full rounded-xl object-cover">
+          <h3 class="mt-3 text-lg font-semibold leading-snug">Vitamin C Face Serum</h3>
+          <p class="mt-1 flex items-center gap-2">
+            <img src="images/stars.png" alt="5 star rating" class="h-[84px] w-[100px]  object-fill">
+            <span class="text-sm text-[#49343B]/70">(4.8)</span>
+          </p>
+          <p class="mt-2 text-xl font-bold text-[#C75B7A]">₹499</p>
+          <a href="./pages/product-detail.html" class="mt-3 block rounded-xl bg-[#C75B7A] py-3 text-center text-sm font-semibold text-white transition hover:bg-[#a94765]">View Product</a>
+        </article>
+
+        <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#F8C8DC] bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+          <img src="images/products-img/moisturieser1.jpg" alt="Daily face moisturizer" class="h-56 w-full rounded-xl object-cover">
+          <h3 class="mt-3 text-lg font-semibold leading-snug">Daily Face Moisturizer</h3>
+          <p class="mt-1 flex items-center gap-2">
+            <img src="images/stars.png" alt="5 star rating" class="h-[84px] w-[100px]  object-fill">
+            <span class="text-sm text-[#49343B]/70">(4.6)</span>
+          </p>
+          <p class="mt-2 text-xl font-bold text-[#C75B7A]">₹399</p>
+          <a href="./pages/product-detail.html" class="mt-3 block rounded-xl bg-[#C75B7A] py-3 text-center text-sm font-semibold text-white transition hover:bg-[#a94765]">View Product</a>
+        </article>
+
+        <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#F8C8DC] bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+          <img src="images/products-img/facewash1.jpg" alt="Gentle face wash" class="h-56 w-full rounded-xl object-cover">
+          <h3 class="mt-3 text-lg font-semibold leading-snug">Gentle Face Wash</h3>
+          <p class="mt-1 flex items-center gap-2">
+            <img src="images/stars.png" alt="5 star rating" class="h-[84px] w-[100px]  object-fill">
+            <span class="text-sm text-[#49343B]/70">(4.7)</span>
+          </p>
+          <p class="mt-2 text-xl font-bold text-[#C75B7A]">₹349</p>
+          <a href="./pages/product-detail.html" class="mt-3 block rounded-xl bg-[#C75B7A] py-3 text-center text-sm font-semibold text-white transition hover:bg-[#a94765]">View Product</a>
+        </article>
+
+        <article class="flex h-full flex-col overflow-hidden rounded-2xl border border-[#F8C8DC] bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
+          <img src="images/products-img/sunscreen1.jpg" alt="Daily sunscreen" class="h-56 w-full rounded-xl object-cover">
+          <h3 class="mt-3 text-lg font-semibold leading-snug">Daily Sunscreen</h3>
+          <p class="mt-1 flex items-center gap-2">
+            <img src="images/stars.png" alt="5 star rating" class="h-[84px] w-[100px] object-fill">
+            <span class="text-sm text-[#49343B]/70">(4.5)</span>
+          </p>
+          <p class="mt-2 text-xl font-bold text-[#C75B7A]">₹479</p>
+          <a href="./pages/product-detail.html" class="mt-3 block rounded-xl bg-[#C75B7A] py-3 text-center text-sm font-semibold text-white transition hover:bg-[#a94765]">View Product</a>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="mx-auto max-w-6xl px-5 pb-10">
+      <div class="flex flex-col items-start justify-between gap-4 rounded-2xl bg-[#F8C8DC] p-7 sm:flex-row sm:items-center">
+        <div>
+          <p class="text-sm font-semibold text-[#C75B7A]">Special Offer</p>
+          <h2 class="text-2xl font-bold">Get 20% Off Your First Order</h2>
+          <p class="mt-1 text-sm text-[#49343B]">Use code: <span class="font-bold text-[#C75B7A]">GLOWUP20</span></p>
+        </div>
+        <a href="./pages/product.html" class="rounded-full bg-[#C75B7A] px-6 py-3 font-semibold text-white hover:opacity-90">Shop Now →</a>
+      </div>
+    </section>
+
+    <!-- Order call to action -->
+    <section class="bg-white px-5 py-12 text-center">
+      <h2 class="text-2xl font-bold text-[#49343B] md:text-3xl">Find Your Everyday Skincare Favorites</h2>
+      <p class="mt-3 text-[#49343B]/70">Explore gentle skincare and build a routine that feels right for you.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a href="./pages/product.html" class="rounded-full bg-[#C75B7A] px-7 py-3 font-semibold text-white transition hover:bg-[#a94765]">
+          Shop Products
+        </a>
+        <a href="https://web.whatsapp.com/" class="rounded-full bg-[#25D366] px-7 py-3 font-semibold text-white transition hover:opacity-90">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Customer reviews -->
+    <section class="bg-[#F8C8DC]/40 px-5 py-14">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-8 text-center">
+          <h2 class="text-3xl font-bold text-[#49343B]">Customer Reviews</h2>
+          <p class="mt-2 text-[#49343B]/70">A little love for your daily skincare routine.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border-l-4 border-[#C75B7A] bg-white p-6 text-center shadow-sm">
+            <img src="images/stars.png" alt="5 star rating" class="mx-auto h-[120px] w-[120px] object-fill">
+            <p class="mt-4 text-[#49343B]/80">"A gentle cleanser that feels lovely as part of my routine."</p>
+            <p class="mt-4 font-semibold text-[#49343B]">GlowUp customer</p>
+          </article>
+          <article class="rounded-2xl border-l-4 border-[#C75B7A] bg-white p-6 text-center shadow-sm">
+            <img src="images/stars.png" alt="5 star rating" class="mx-auto h-[120px] w-[120px] object-fill">
+            <p class="mt-4 text-[#49343B]/80">"The serum is easy to use and fits right into my morning care."</p>
+            <p class="mt-4 font-semibold text-[#49343B]">GlowUp customer</p>
+          </article>
+          <article class="rounded-2xl border-l-4 border-[#C75B7A] bg-white p-6 text-center shadow-sm">
+            <img src="images/stars.png" alt="5 star rating" class="mx-auto h-[120px] w-[120px] object-fill">
+            <p class="mt-4 text-[#49343B]/80">"I love how simple it is to add this moisturizer to my routine."</p>
+            <p class="mt-4 font-semibold text-[#49343B]">GlowUp customer</p>
+          </article>
+          <article class="rounded-2xl border-l-4 border-[#C75B7A] bg-white p-6 text-center shadow-sm">
+            <img src="images/stars.png" alt="5 star rating" class="mx-auto h-[120px] w-[120px] object-fill">
+            <p class="mt-4 text-[#49343B]/80">"A lovely collection for everyday skincare and self-care."</p>
+            <p class="mt-4 font-semibold text-[#49343B]">GlowUp customer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#49343B] px-5 py-8 text-white">
+    <div class="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <a href="./index.html" class="flex items-center gap-2 text-xl font-bold">
+          <img src="images/lotus.png" alt="GlowUp lotus logo" class="h-9 w-9">
+          GlowUp
+        </a>
+        <p class="mt-3 text-sm leading-relaxed text-[#FFF8F0]">
+          Gentle skincare made for your everyday routine. Cleanse, care, and let your natural glow shine.
+        </p>
+        <p class="mt-3 text-sm font-semibold text-[#F8C8DC]">Care for your skin, every day.</p>
+      </div>
+
+      <div>
+        <h2 class="mb-3 font-bold text-white">Quick Links</h2>
+        <ul class="space-y-2 text-sm text-[#FFF8F0]">
+          <li><a href="./index.html" class="hover:text-[#F8C8DC]">Home</a></li>
+          <li><a href="./pages/product.html" class="hover:text-[#F8C8DC]">Our Products</a></li>
+          <li><a href="./pages/about.html" class="hover:text-[#F8C8DC]">About</a></li>
+          <li><a href="./pages/contact.html" class="hover:text-[#F8C8DC]">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-3 font-bold text-white">Categories</h2>
+        <ul class="space-y-2 text-sm text-[#FFF8F0]">
+          <li><a href="./pages/product.html" class="hover:text-[#F8C8DC]">Face Wash</a></li>
+          <li><a href="./pages/product.html" class="hover:text-[#F8C8DC]">Serums</a></li>
+          <li><a href="./pages/product.html" class="hover:text-[#F8C8DC]">Moisturizers</a></li>
+          <li><a href="./pages/product.html" class="hover:text-[#F8C8DC]">Sunscreen</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-3 font-bold text-white">Contact</h2>
+        <a href="mailto:pratikshashinde2622@gmail.com" class="flex items-center gap-2 text-sm text-[#FFF8F0] hover:text-[#F8C8DC]">
+          <img src="./images/gmail.png" alt="Gmail" class="h-5 w-5 object-contain">
+          pratikshashinde2622@gmail.com
+        </a>
+        <a href="tel:9881383816" class="mt-3 flex items-center gap-2 text-sm text-[#FFF8F0] hover:text-[#F8C8DC]">
+          <img src="./images/call.png" alt="Phone" class="h-5 w-5 object-contain">
+          9881383816
+        </a>
+        <div class="mt-5 flex items-center gap-4">
+          <a href="https://www.instagram.com/" aria-label="Instagram" class="rounded-full bg-white/10 p-2 hover:bg-white/20">
+            <img src="./images/instagram.png" alt="" class="h-6 w-6 object-contain">
+          </a>
+          <a href="https://www.facebook.com/" aria-label="Facebook" class="rounded-full bg-white/10 p-2 hover:bg-white/20">
+            <img src="./images/facebook.png" alt="" class="h-6 w-6 object-contain">
+          </a>
+          <a href="https://wa.me/1234567890" aria-label="WhatsApp" class="rounded-full bg-white/10 p-2 hover:bg-white/20">
+            <img src="./images/whatsapp.png" alt="" class="h-6 w-6 object-contain">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="mx-auto mt-6 max-w-6xl border-t border-white/20 pt-4 text-center text-xs text-[#FFF8F0]">
+      © 2026 GlowUp. All Rights Reserved.
+    </p>
+  </footer>
+
 </body>
 </html>
