@@ -1,88 +1,81 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GlowUp Beauty - My Cart</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-     body {
-            font-family: 'Poppins', sans-serif;
-            background: #fffaf8;
-        }
-
-        .pink-gradient {
-            background: linear-gradient(110deg, #f8dce4, #fff0f1);
-        }
-
-        .pink-button {
-            background: linear-gradient(90deg, #c32c70, #e34b8c);
-        }
-
-        .product-image {
-            width: 65px;
-            height: 65px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    </style>
-       
 </head>
 
-<body class="text-gray-700">
+<body class="font-['Poppins',sans-serif] bg-[#fffaf8] text-gray-700">
 
-    <!-- Navbar -->
-    <nav class="bg-white border-b border-pink-100">
-        <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
+    <!-- Header -->
+  <header class="bg-white fixed top-0 z-50 w-full border-b border-[#F8C8DC] shadow-sm">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-4">
+      <a href="../index.html" class="flex items-center gap-2 text-2xl font-bold text-[#C75B7A]">
+        <img src="../images/lotus.png" alt="GlowUp lotus logo" class="h-9 w-9">
+        GlowUp
+      </a>
 
-            <a href="#" class="text-xl font-bold text-pink-600 leading-tight">
-                GlowUp
-                <span class="block text-[9px] tracking-[2px] text-gray-500">
-                    BEAUTY & SKINCARE
-                </span>
-            </a>
-
-            <div class="hidden md:flex items-center gap-6 text-xs font-medium">
-                <a href="#" class="hover:text-pink-600">Home</a>
-                <a href="#" class="hover:text-pink-600">Shop</a>
-                <a href="#" class="hover:text-pink-600">About</a>
-                <a href="#" class="hover:text-pink-600">Blog</a>
-                <a href="#" class="hover:text-pink-600">Contact</a>
-            </div>
-
-            <div class="flex items-center gap-3 text-pink-600">
-                <button aria-label="Search">⌕</button>
-                <button aria-label="Wishlist">♡</button>
-                <button aria-label="Account">♙</button>
-                <button aria-label="Cart" class="relative">
-                    🛒
-                    <span id="cart-count"
-                        class="absolute -top-2 -right-2 bg-pink-600 text-white rounded-full w-4 h-4 text-[9px] flex items-center justify-center">
-                        4
-                    </span>
-                </button>
-            </div>
-
+      <nav class="flex flex-wrap items-center gap-5 text-sm font-medium">
+        <a href="../index.html" class="flex items-center gap-1.5 text-[#C75B7A]">
+          <img src="../images/home.png" alt="" class="h-4 w-4 object-contain">
+          Home
+        </a>
+        <a href="../pages/product.html" class="flex items-center gap-1.5 hover:text-[#C75B7A]">
+          <img src="../images/products.png" alt="" class="h-4 w-4 object-contain">
+          Products
+        </a>
+        <a href="../pages/about.html" class="flex items-center gap-1.5 hover:text-[#C75B7A]">
+          <img src="../images/info.png" alt="" class="h-4 w-4 object-contain">
+          About
+        </a>
+        <a href="../pages/contact.html" class="flex items-center gap-1.5 hover:text-[#C75B7A]">
+          <img src="../images/phone-call.png" alt="" class="h-4 w-4 object-contain">
+          Contact
+        </a>
+            </nav>
+            <div class="flex items-center gap-3">
+        <a href="../pages/cart.html" aria-label="Cart" class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90">
+          <img src="../images/shopping-cart.png" alt="" class="h-5 w-5 object-contain">
+          Cart
+        </a>
+        <a href="../pages/login.html" class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white hover:opacity-90">
+          <img src="../images/account.png" alt="" class="h-5 w-5 object-contain">
+          Login
+        </a>
         </div>
-    </nav>
+    </div>
+  </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+  
+
+  
 
         <!-- Cart Banner -->
-        <section class="pink-gradient rounded-2xl px-6 py-7 md:px-10 flex items-center justify-between overflow-hidden mb-7">
+        <section class="bg-gradient-to-r from-[#f8dce4] to-[#fff0f1] rounded-2xl px-6 py-7 md:px-10 flex items-center justify-between overflow-hidden mb-7">
 
             <div>
                 <p class="text-xs text-pink-600 mb-1">Home / Shopping Cart</p>
                 <h1 class="text-3xl font-bold text-gray-800">Your Cart</h1>
+
                 <p class="text-xs text-gray-600 mt-2">
                     Review your items and proceed to checkout.
                 </p>
             </div>
 
-            <div class="hidden sm:block text-6xl">🛍️</div>
+           <div class="hidden sm:block text-6xl">
+    <img src="../images/cart.png"
+         alt="GlowUp Beauty"
+         class="w-32 h-32 object-cover rounded-xl">
+</div>
 
         </section>
 
@@ -104,16 +97,20 @@
                     data-price="499">
 
                     <div class="col-span-2 sm:col-span-6 flex items-center gap-3">
-                        <img src="../images/facebook.png" alt="Vitamin C Face Serum"
-                            class="product-image bg-pink-50">
-                            
+
+                        <img src="../images/facebook.png"
+                            alt="Vitamin C Face Serum"
+                            class="w-[65px] h-[65px] object-cover rounded-lg bg-pink-50">
 
                         <div>
                             <h3 class="text-xs sm:text-sm font-semibold text-gray-800">
-                                
                                 Vitamin C Face Serum
                             </h3>
-                            <p class="text-[10px] text-gray-400 mt-1">30ml · Skincare</p>
+
+                            <p class="text-[10px] text-gray-400 mt-1">
+                                30ml · Skincare
+                            </p>
+
                             <button class="text-[10px] text-pink-500 mt-1 remove-item">
                                 Remove
                             </button>
@@ -136,6 +133,7 @@
                         <span class="sm:hidden text-xs text-gray-400">Total: </span>
                         <span class="item-total">₹499</span>
                     </div>
+
                 </div>
 
                 <!-- Product 2 -->
@@ -143,15 +141,21 @@
                     data-price="399">
 
                     <div class="col-span-2 sm:col-span-6 flex items-center gap-3">
-                        <img src="images/moisturizer.jpg" alt="Hydrating Face Moisturizer"
-                            class="product-image bg-pink-50"
+
+                        <img src="images/moisturizer.jpg"
+                            alt="Hydrating Face Moisturizer"
+                            class="w-[65px] h-[65px] object-cover rounded-lg bg-pink-50"
                             onerror="this.style.display='none'">
 
                         <div>
                             <h3 class="text-xs sm:text-sm font-semibold text-gray-800">
                                 Hydrating Face Moisturizer
                             </h3>
-                            <p class="text-[10px] text-gray-400 mt-1">50g · Skincare</p>
+
+                            <p class="text-[10px] text-gray-400 mt-1">
+                                50g · Skincare
+                            </p>
+
                             <button class="text-[10px] text-pink-500 mt-1 remove-item">
                                 Remove
                             </button>
@@ -174,6 +178,7 @@
                         <span class="sm:hidden text-xs text-gray-400">Total: </span>
                         <span class="item-total">₹399</span>
                     </div>
+
                 </div>
 
                 <!-- Product 3 -->
@@ -181,15 +186,21 @@
                     data-price="479">
 
                     <div class="col-span-2 sm:col-span-6 flex items-center gap-3">
-                        <img src="images/sunscreen.jpg" alt="Sunscreen SPF 50+"
-                            class="product-image bg-pink-50"
+
+                        <img src="images/sunscreen.jpg"
+                            alt="Sunscreen SPF 50+"
+                            class="w-[65px] h-[65px] object-cover rounded-lg bg-pink-50"
                             onerror="this.style.display='none'">
 
                         <div>
                             <h3 class="text-xs sm:text-sm font-semibold text-gray-800">
                                 Sunscreen SPF 50+
                             </h3>
-                            <p class="text-[10px] text-gray-400 mt-1">50ml · Sun Protection</p>
+
+                            <p class="text-[10px] text-gray-400 mt-1">
+                                50ml · Sun Protection
+                            </p>
+
                             <button class="text-[10px] text-pink-500 mt-1 remove-item">
                                 Remove
                             </button>
@@ -212,6 +223,7 @@
                         <span class="sm:hidden text-xs text-gray-400">Total: </span>
                         <span class="item-total">₹479</span>
                     </div>
+
                 </div>
 
                 <!-- Product 4 -->
@@ -219,15 +231,21 @@
                     data-price="249">
 
                     <div class="col-span-2 sm:col-span-6 flex items-center gap-3">
-                        <img src="images/clay-mask.jpg" alt="Clay Face Mask"
-                            class="product-image bg-pink-50"
+
+                        <img src="images/clay-mask.jpg"
+                            alt="Clay Face Mask"
+                            class="w-[65px] h-[65px] object-cover rounded-lg bg-pink-50"
                             onerror="this.style.display='none'">
 
                         <div>
                             <h3 class="text-xs sm:text-sm font-semibold text-gray-800">
                                 Clay Face Mask
                             </h3>
-                            <p class="text-[10px] text-gray-400 mt-1">100g · Face Care</p>
+
+                            <p class="text-[10px] text-gray-400 mt-1">
+                                100g · Face Care
+                            </p>
+
                             <button class="text-[10px] text-pink-500 mt-1 remove-item">
                                 Remove
                             </button>
@@ -250,17 +268,20 @@
                         <span class="sm:hidden text-xs text-gray-400">Total: </span>
                         <span class="item-total">₹249</span>
                     </div>
+
                 </div>
 
                 <!-- Coupon -->
                 <div class="mt-5 pt-4 border-t border-gray-100">
+
                     <div class="flex gap-2">
-                        <input id="coupon" type="text"
+                        <input id="coupon"
+                            type="text"
                             placeholder="Enter coupon code"
                             class="min-w-0 flex-1 border rounded-lg px-3 py-2 text-xs outline-none focus:border-pink-400">
 
                         <button id="apply-coupon"
-                            class="pink-button text-white text-xs font-semibold px-5 py-2 rounded-lg hover:opacity-90">
+                            class="bg-gradient-to-r from-[#c32c70] to-[#e34b8c] text-white text-xs font-semibold px-5 py-2 rounded-lg hover:opacity-90">
                             Apply
                         </button>
                     </div>
@@ -268,6 +289,7 @@
                     <p id="coupon-message" class="text-[11px] mt-2 text-gray-500">
                         Try coupon code GLOWUP20 for ₹200 off.
                     </p>
+
                 </div>
 
             </section>
@@ -296,11 +318,13 @@
 
                 <div class="border-t border-gray-100 pt-4 mt-4 flex justify-between items-center">
                     <span class="font-semibold text-sm">Total</span>
-                    <span id="grand-total" class="font-bold text-lg text-pink-700">₹1,626</span>
+                    <span id="grand-total" class="font-bold text-lg text-pink-700">
+                        ₹1,626
+                    </span>
                 </div>
 
                 <button id="checkout"
-                    class="pink-button w-full text-white rounded-lg py-3 mt-6 text-xs font-semibold hover:opacity-90 transition">
+                    class="bg-gradient-to-r from-[#c32c70] to-[#e34b8c] w-full text-white rounded-lg py-3 mt-6 text-xs font-semibold hover:opacity-90 transition">
                     Proceed to Checkout →
                 </button>
 
@@ -351,10 +375,12 @@
 
     <!-- Footer -->
     <footer class="bg-[#38202d] text-white mt-8">
+
         <div class="max-w-7xl mx-auto px-5 py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
 
             <div>
                 <h2 class="text-xl font-semibold text-pink-200">✿ GlowUp</h2>
+
                 <p class="text-[11px] text-pink-100/70 mt-3 leading-5">
                     Your beauty, our passion. Discover skincare essentials
                     for healthy, glowing skin.
@@ -363,6 +389,7 @@
 
             <div>
                 <h3 class="text-sm font-semibold mb-3">Quick Links</h3>
+
                 <ul class="text-xs text-pink-100/70 space-y-2">
                     <li><a href="#" class="hover:text-white">Home</a></li>
                     <li><a href="#" class="hover:text-white">About Us</a></li>
@@ -373,6 +400,7 @@
 
             <div>
                 <h3 class="text-sm font-semibold mb-3">Shop Categories</h3>
+
                 <ul class="text-xs text-pink-100/70 space-y-2">
                     <li>Face Care</li>
                     <li>Skin Care</li>
@@ -383,11 +411,15 @@
 
             <div>
                 <h3 class="text-sm font-semibold mb-3">Newsletter</h3>
+
                 <p class="text-[11px] text-pink-100/70 mb-3">
                     Get beauty tips and exclusive offers.
                 </p>
+
                 <form id="newsletter" class="flex">
-                    <input type="email" required placeholder="Your email"
+                    <input type="email"
+                        required
+                        placeholder="Your email"
                         class="min-w-0 w-full rounded-l-md px-3 py-2 text-xs text-gray-800 outline-none">
 
                     <button class="bg-pink-600 rounded-r-md px-3 py-2 text-xs">
@@ -401,7 +433,8 @@
         <div class="border-t border-white/10 text-center py-4 text-[10px] text-pink-100/60">
             © 2026 GlowUp Beauty. All rights reserved.
         </div>
+
     </footer>
 
-    </body>
-    </html>
+</body>
+</html>
