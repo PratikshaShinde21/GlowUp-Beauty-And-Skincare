@@ -11,7 +11,7 @@
  
 </head>
 
-<body class="bg-[#fff8f0] text-gray-700">
+<body class="bg-[#fff8f0] text-[#49343B]"> 
   <!-- Header -->
   <header class="bg-white fixed top-0 z-50 w-full border-b border-[#F8C8DC] shadow-sm">
     <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-4">
@@ -212,6 +212,93 @@
 
     </div>
   </section>
+ <!-- Our Story in Media Section -->
+    <section class="w-full border-x border-[#e4d6c3] px-5 pt-8">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-semibold text-[#382f28]">
+                Our Story in Media
+            </h2>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Left Card: Glowup Story -->
+            <div class="media-card p-6 md:p-7">
+
+                <!-- Card Heading -->
+                <div class="flex items-center gap-3 mb-5">
+                    <span class="text-3xl"></span>
+                    <h3 class="text-xl font-semibold text-[#382f28]">
+                        Our Glowup Story
+                    </h3>
+                </div>
+
+<!-- Video -->
+                <div class="w-full">
+                    <video
+                        controls
+                        playsinline
+                        preload="metadata"
+                        class="w-full h-[275px] object-cover rounded-xl bg-black">
+
+                        <source src="video/video.mp4"
+                                type="video/mp4">
+
+                        Your browser does not support video.
+                    </video>
+                </div>
+
+            </div>
+
+
+            <!-- Right Card: Founder's Message -->
+            <div class="media-card p-6 md:p-7">
+
+                <!-- Card Heading -->
+                <div class="flex items-center gap-3 mb-10">
+                    <span class="text-3xl"></span>
+                    <h3 class="text-xl font-semibold text-[#382f28]">
+                        Founder's Message
+                    </h3>
+                </div>
+
+                <!-- Logo -->
+                <div class="flex justify-center mb-5">
+                    <div class="w-28 h-28 rounded-full border-[3px]
+                                border-[#bd4036] flex items-center
+                                justify-center p-2">
+
+                        <img
+                            src="../images/glow.png"
+                            alt="Annapurna Hub Logo"
+                            class="w-full h-full rounded-full object-contain">
+                    </div>
+                </div>
+
+                <!-- Audio Player -->
+                <div class="w-full mb-9">
+                    <audio controls preload="metadata"
+                           class="w-full h-[68px]">
+                        <source src="images/founder-message.mp3"
+                                type="audio/mpeg">
+
+                        Your browser does not support audio.
+                    </audio>
+                </div>
+
+                <!-- Description -->
+                <p class="text-base text-[#817568] leading-7">
+                  Listen to a special message from our founder about Glow Up Beauty and our passion for enhancing your natural beauty.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 
   <!-- Footer -->
   <footer class="bg-[#49343B] px-5 py-8 text-white ">
