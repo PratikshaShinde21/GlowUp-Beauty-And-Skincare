@@ -1,4 +1,7 @@
-# GlowUp - Beauty and Skincare
+<div align="center">
+  <img src="./images/lotus.png" width="100" alt="GlowUp lotus logo" />
+  <h1>GlowUp - Beauty and Skincare</h1>
+</div>
 
 GlowUp is a responsive, multi-page beauty and skincare website built with HTML and Tailwind CSS. Visitors can browse skincare products, learn about the brand, and find contact and account information.
 
