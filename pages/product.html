@@ -8,15 +8,15 @@
 </head>
 
 <body class="bg-[#fff8f0] mt-20">
-     <!-- Header -->
+    <!-- Header -->
   <header class="bg-white fixed top-0 z-50 w-full border-b border-[#F8C8DC] shadow-sm">
-    <div class="mx-auto grid max-w-6xl grid-cols-[1fr_auto] items-center gap-x-2 gap-y-2 px-3 py-2 sm:flex sm:flex-wrap sm:justify-between sm:gap-4 sm:px-5 sm:py-4">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-5 md:py-4">
       <a href="./../index.html" class="flex items-center gap-2 text-xl font-bold text-[#C75B7A] sm:text-2xl">
         <img src="./../images/lotus.png" alt="GlowUp lotus logo" class="h-9 w-9">
         GlowUp
       </a>
 
-      <nav class="col-span-2 flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-2 text-[11px] font-medium sm:w-auto sm:justify-start sm:gap-5 sm:text-sm">
+      <nav class="hidden items-center gap-5 text-sm font-medium md:flex">
         <a href="./../index.html" class="flex items-center gap-1.5 text-[#C75B7A]">
           <img src="./../images/home.png" alt="" class="h-4 w-4 object-contain">
           Home
@@ -35,18 +35,60 @@
         </a>
       </nav>
 
-      <div class="flex items-center justify-end gap-2 sm:gap-3">
-        <a href="./cart.html" aria-label="Cart" class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90">
+      <div class="hidden items-center gap-3 md:flex">
+        <a href="./cart.html" aria-label="Cart"
+          class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90">
           <img src="./../images/shopping-cart.png" alt="" class="h-5 w-5 object-contain">
           Cart
         </a>
-        <a href="./login.html" class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white hover:opacity-90">
+        <a href="./login.html"
+          class="flex items-center gap-2 rounded-full bg-[#C75B7A] px-5 py-2 text-sm font-semibold text-white hover:opacity-90">
           <img src="./../images/account.png" alt="" class="h-5 w-5 object-contain">
           Login
         </a>
       </div>
+
+      <details class="relative md:hidden">
+        <summary aria-label="Toggle navigation menu"
+          class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border-2 border-[#49343B] text-[#49343B] marker:content-none">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </summary>
+        <nav
+          class="absolute right-0 top-full mt-3 flex w-64 max-w-[calc(100vw-2rem)] flex-col gap-1 rounded-xl border border-[#F8C8DC] bg-[#FFF8F0] p-3 text-base shadow-lg">
+          <a href="./../index.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-[#F8C8DC]/40">
+            <img src="./../images/home.png" alt="" class="h-5 w-5 object-contain">
+            Home
+          </a>
+          <a href="./product.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-[#F8C8DC]/40">
+            <img src="./../images/products.png" alt="" class="h-5 w-5 object-contain">
+            Products
+          </a>
+
+          <a href="./about.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-[#F8C8DC]/40">
+            <img src="./../images/info.png" alt="" class="h-5 w-5 object-contain">
+            About
+          </a>
+          <a href="./contact.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-[#F8C8DC]/40">
+            <img src="./../images/phone-call.png" alt="" class="h-5 w-5 object-contain">
+            Contact
+          </a>
+          <a href="./cart.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-[#F8C8DC]/40">
+            <img src="./../images/shopping-cart.png" alt="" class="h-5 w-5 object-contain">
+            Cart
+          </a>
+          <a href="./login.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-[#F8C8DC]/40">
+            <img src="./../images/account.png" alt="" class="h-5 w-5 object-contain">
+            Login
+          </a>
+        </nav>
+      </details>
     </div>
   </header>
+
+
 
   <div class="text-center mt-10 mb-8 px-4">
 
